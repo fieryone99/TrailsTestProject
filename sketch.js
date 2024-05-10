@@ -20,6 +20,10 @@ function draw() {
   let x = r * cos(angle);
   let y = r * sin(angle);
 
+  let offset = p5.Vector.random2D().setMag(random(1, 10));
+  x += offset.x;
+  y += offset.y;
+
   let p = new Particle(x, y);
   listOfParticles.push(p);
 
