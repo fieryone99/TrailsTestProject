@@ -7,6 +7,7 @@ let listOfParticles = [];
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 360, 100, 100, 100, 100);
+  maxLen = min(windowWidth/2 - 10, windowHeight/2 - 10);
 }
 
 function draw() {
